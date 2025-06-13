@@ -1,0 +1,90 @@
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  background-image: url("https://cdn.discordapp.com/attachments/1348957301104443455/1382280649536311346/image.png?ex=684a94ac&is=6849432c&hm=0727a9a4594b361036256769540402a5887b3205440693bfb434f45466eda903&");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.background img {
+  width: 100%;
+ height: auto;
+  display: block;
+}
+
+.card {
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+.left-section {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 35%;
+}
+
+.left-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+ height: auto;
+  display: block;
+}
+
+.card {
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+.left-section {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 35%;
+}
+
+.left-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}

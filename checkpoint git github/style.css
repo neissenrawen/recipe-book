@@ -1,0 +1,80 @@
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  background-image: url("https://cdn.discordapp.com/attachments/1348957301104443455/1382280649536311346/image.png?ex=684be62c&is=684a94ac&hm=ba10f205a6688c1f1c6cad8d05804f3f724018094c53e9c94b60661f5fb4c604&");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* La carte principale */
+.card {
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  overflow: hidden;
+  /* Utilisation de display inline-block pour éviter flexbox */
+  display: inline-block;
+}
+
+/* Section gauche (image) */
+.left-section {
+  width: 35%;
+  float: left; /* mise en page en float pour le positionnement */
+  background-color: #000;
+  padding: 25px;
+  box-sizing: border-box;
+  height: 100%; /* assurer la hauteur complète */
+}
+
+/* Image dans la section gauche */
+.left-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Section droite (contenu) */
+.right-section {
+  width: 65%;
+  float: right; /* float pour aligner à côté */
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+/* Nettoyage du float après la carte */
+.card::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Styles pour les icônes si nécessaire */
+.icons {
+  margin-top: 20px;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}
